@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to your sign-up page for moneys..</h1>
+</div>
+<div>
+    <form method="post">
+        <input type="text" placeholder="Username" asp-for="@Model.NewUser.Username"/>
+        <input type="password" placeholder="Password" asp-for="@Model.NewUser.Password" />
+        <input type="email" placeholder="Email" asp-for="@Model.NewUser.Email" />
+        <input type="submit" />
+    </form>
+</div>
